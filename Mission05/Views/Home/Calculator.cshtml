@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Calculator</title>
+</head>
+
+<body>
+    <h3>Answer a few questions for a price estimate</h3>
+    <br />
+
+    <!-- coaching method selector -->
+    <label for="coachingMethod">Coaching Method:</label>
+    <select id="coachingMethod">
+        <option value="onTheCourse" selected>On the Course</option>
+        <option value="liveZoom">Live Zoom</option>
+        <option value="recordedVideo">Recorded Video</option>
+    </select>
+
+    <br /><br />
+    
+    <!-- hour selector -->
+    <label for="hours">Enter the number of hours:</label>
+    <input type="text" id="hours" placeholder="">
+
+    <br><br />
+
+    <!-- rate display -->
+    <label for="hourlyRate">Hourly Rate ($):</label>
+    <input type="text" id="hourlyRate" value="60.00" readonly style="color: darkgrey">
+
+    <br><br />
+
+    <!-- calculate button -->
+    <button id="calculate">Calculate Total</button>
+
+    <br><br />
+
+    <!-- total cost display -->
+    <label for="total">Total Cost ($):</label>
+    <input type="text" id="total" readonly>
+
+</body>
+</html>
